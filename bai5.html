@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+         function checkChuoiInArray(array, chuoi) {
+            var result = [];
+            for (var i = 0; i < array.length; i++) {
+                if (array[i].includes(chuoi)) {
+                    result.push(array[i]);            
+                }
+            }    return result;      
+        }
+        var array = ["apple", "orange", "kiwi", "banana","mango"];
+        var chuoi = prompt("Nhập vào một chuỗi bất kỳ:");
+        var result = checkChuoiInArray(array, chuoi);
+        if (result.length > 0) {
+            console.log("Các phần tử trong mảng có chứa chuỗi là:" + chuoi);
+        } else {
+            console.log("Không có phần tử nào trong mảng chứa chuỗi" + chuoi);
+        }
+    </script>
+</body>
+
+</html>

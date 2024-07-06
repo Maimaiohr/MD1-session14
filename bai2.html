@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var mang = ["Hoa", "Hanh", "Phuong"];
+
+        function findMax(array) {
+            var max = array[0].length;
+            var maxElement = array[0];
+            for (var i = 1; i < array.length; i++) {
+                if (max < array[i].length) {
+                    max = array[i].length;
+                    maxElement = array[i];
+                }
+            }
+            return maxElement;
+        }
+        document.write("phan tu co do dai lon nhat là" + findMax(mang));
+    </script>
+</body>
+
+</html>
